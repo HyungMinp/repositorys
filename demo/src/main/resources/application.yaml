@@ -1,0 +1,22 @@
+#spring.application.name=demo
+spring:
+  application: 
+    name: demo
+  datasource:
+    #driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name:  com.p6spy.engine.spy.P6SpyDriver
+    #url: jdbc:mysql://localhost:3306/test_db?serverTimezone=Asia/Seoul
+    url: jdbc:p6spy:mysql://localhost:3306/test_db?serverTimezone=Asia/Seoul
+    username: root
+    password: 1234
+  main:
+    banner-mode: 'off'
+  
+mybatis:
+  mapper-locations: classpath:mapper/sample/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+logging:
+  level:
+    com.p6spy: INFO
