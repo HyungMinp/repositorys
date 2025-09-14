@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class DemoApplication {
-//asd ydy
+//asd ydy test1
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
